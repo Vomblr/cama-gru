@@ -1,0 +1,12 @@
+a.signup {
+    color:  var(--red);
+}
+
+form {
+    height: 430px;
+}
+
+#sub {
+    margin-top: 20px;
+}
+

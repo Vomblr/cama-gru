@@ -1,0 +1,276 @@
+:root {
+    --red: #E03237;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+*{
+    text-decoration: none;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(250, 250, 253);
+    box-sizing: border-box;
+    transition: box-shadow .25s, color .5s;
+}
+
+html, body, .wrapper{
+    margin: 0;
+    min-height: 100%;
+}
+
+a, p, tr, th, img, .legend, .combox, .comment, .actual_comments, #cont {
+    background-color: transparent;
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    background-color: rgb(243, 182, 92);
+}
+
+.container {
+    display: flex;
+    margin-top: 200px;
+    position: absolute;
+    top: 50px;
+    min-width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+form {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    height: 220px;
+    width: 220px;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: rgb(243, 182, 92);
+    position: relative;
+    margin: auto;
+}
+
+a:link {
+    color: black;
+}
+
+a:hover {
+    color: var(--red);
+}
+
+
+.wrapper {
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-bottom: 120px;
+}
+
+.head {
+    padding: 10px;
+    height: 70px;
+    min-width: 100%;
+    position: absolute;
+    background-color: rgb(243, 182, 92);
+    z-index: 1;
+}
+
+.signup, .login, .montage, .logout, .leaderboard
+{
+    height: 20px;
+    font-size: 100%;
+    float: right;
+    top: 22px;
+    padding: 20px;
+}
+
+.signup {
+    right: 270px;
+}
+
+.login
+{
+    right: 140px;
+}
+
+.logout
+{
+    right: 300px;
+}
+
+.montage
+{
+    right: 40px;
+}
+
+.leaderboard {
+    right: 410px;
+}
+
+
+@media (max-width: 770px) {
+    .signup, .login, .montage, .logout, .leaderboard {
+        font-size: 60%;
+        top: 25px;
+    }
+
+    .signup {
+        right: 180px;
+    }
+
+    .login {
+        right: 90px;
+    }
+
+    .logout {
+        right: 200px;
+    }
+
+    .montage {
+        right: 20px;
+    }
+    .leaderboard {
+        right: 280px;
+    }
+}
+
+
+
+.logo
+{
+    height: 100%;
+    width: auto;
+    position: relative;
+    background-color: rgb(243, 182, 92);
+}
+
+.line {
+    position: relative;
+    overflow: visible;
+    height: 1px;
+    background-color: #ddd;
+    border: 1px solid #ddd;
+}
+
+textarea {resize: none}
+
+input[type=button], input[type=submit], input[type=reset], .input_like {
+    background-color: rgb(245, 163, 41);
+    border: none;
+    border-radius: 20px;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 5px 2px;
+    cursor: pointer;
+    border: solid 1px black;
+  }
+
+form {
+    margin: 0 auto;
+    height: 300px;
+    width: 300px;
+}
+
+form:hover {
+    box-shadow: 3px 2px 2px rgb(213, 234, 254);
+}
+
+.form-text {
+    font-size: 1.1em;
+    width: 230px;
+    height: 50px;
+    background-color: rgb(250, 250, 250);
+    border: 1px gray solid;
+    margin: 5px 2px;
+}
+
+h2 {
+    font-family: Avenir, sans-serif;
+    font-size: 1.6em;
+    margin: 5px;
+}
+
+.send {
+    font-size: 1.1em;
+    width: 230px;
+    height: 50px;
+    border: 1px gray solid;
+    border-radius: 10px;
+}
+
+.footer
+{
+    background-color: rgb(243, 182, 92);
+    font-size:12px;
+    text-align:right;
+    height:60px;
+    min-width: 100%;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    padding-right: 20px;
+}
+
+.chose_file {
+    color: black;
+    text-decoration: none;
+    margin: 5px 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 230px;
+    height: 50px;
+    border: 1px gray solid;
+    border-radius: 10px;
+}
+
+label {
+    margin: 10px;
+}
+
+
+.error, .success {
+    text-align: center;
+    position: absolute;
+    top: 70px;
+    margin: 10px 40%;
+    border-radius: 20px;
+    height: auto;
+    min-width: 20%;
+    max-height: 40%;
+    background-color: rgb(201, 181, 141);
+}
+
+.error p {
+    color: var(--red);
+    margin-top: 25px;
+}
+
+.success {
+    background-color: rgb(213, 234, 254);
+    border: none;
+}
+
+div.arrow_keys {
+    padding: 10px;
+}
+
+.closebtn {
+    margin-right: 7px;
+    margin-top: 2px;
+    color: black;
+    float: right;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    background-color: transparent;
+}
